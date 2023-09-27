@@ -56,7 +56,7 @@ $ sudo eject /dev/sdg
 disable secure boot /shrug
 
 
-# installation
+# linux installation
 https://wiki.archlinux.org/title/installation_guide
 
 ## get on the wifi
@@ -145,3 +145,5 @@ grub-mkconfig -o /boot/grub/grub.cfg
 umount -R /mnt
 reboot
 ```
+
+# desktop installation
