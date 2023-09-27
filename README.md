@@ -114,4 +114,34 @@ swapon /dev/vol0/swap
 ```
 
 ### install base OS
-rest of arch documentation...
+pacstrap all the tools we need for the rest of these setup steps and first boot
+
+```
+pacstrap /mnt base linux linux-firmware grub efibootmgr vim lvm2 iwd
+```
+
+rest of arch install documentation... timezone/lang/locale/etc...
+
+### bootloader
+```
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+```
+
+### enable lvm
+```
+# add lvm2 to hooks
+vim /etc/mkinitcpio.conf
+mkinitcpio -P
+
+# add lvm to preload modules
+vim /etc/default/grub
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+### reboot
+
+```
+# exit chroot
+umount -R /mnt
+reboot
+```
