@@ -164,3 +164,31 @@ systemctl enable iwd
 ```
 
 use `iwctl` to connect
+
+/etc/resolv.conf
+```
+nameserver 1.1.1.1
+nameserver 8.8.8.8
+```
+cloudflare and google?
+
+## user time
+```
+pacman -S sudo
+echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/10_wheel
+```
+
+you probably dont want to be me
+```
+useradd -m chris
+passwd chris
+usermod -a -G wheel chris
+```
+
+
+## lets get some basic UI
+```
+pacman -S slim i3 rxvt-unicode xorg-server
+systemctl enable slim
+systemctl start slim
+```
