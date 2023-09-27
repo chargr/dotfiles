@@ -2,6 +2,8 @@
 
 documenting the linux install of my new laptop
 
+automating later?
+
 # prep
 
 
