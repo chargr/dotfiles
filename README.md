@@ -192,3 +192,22 @@ pacman -S slim i3 rxvt-unicode xorg-server
 systemctl enable slim
 systemctl start slim
 ```
+
+# notes
+other minor things we did along the way that
+
+## fixes
+got perl warnings for locale settings
+### locale
+```
+LC_ALL
+LANGUAGE
+```
+
+## additional packages
+```
+less
+man-db
+git
+openssh
+```
