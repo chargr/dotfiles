@@ -101,4 +101,17 @@ lvcreate -n home -L128G vol0
 mkfs.ext4 /dev/vol0/root
 # no root resevation for /home
 mkfs.ext4 -m 0 /dev/vol0/home
+mkswap /dev/vol0/swap
+
 ```
+
+### mount
+```
+mount /dev/vol0/root /mnt
+mount --mkdir /dev/nvme0n1p1 /mnt/boot
+mount --mkdir /dev/vol0/home /mnt/home
+swapon /dev/vol0/swap
+```
+
+### install base OS
+rest of arch documentation...
