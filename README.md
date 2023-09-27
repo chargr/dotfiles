@@ -149,3 +149,18 @@ reboot
 ```
 
 # desktop installation
+
+## getting online
+enable iwd dhcp client in /etc/iwd/main.conf
+```
+[General]
+EnableNetworkConfiguration=true
+```
+
+enable the service and start it
+```
+systemctl start iwd
+systemctl enable iwd
+```
+
+use `iwctl` to connect
