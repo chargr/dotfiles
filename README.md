@@ -1,4 +1,8 @@
-# installation
+# introduction
+
+documenting the linux install of my new laptop
+
+# prep
 
 
 ## make usb boot (from another linux host)
@@ -48,12 +52,14 @@ $ sudo dd if=archlinux-x86_64.iso of=/dev/sdg bs=4M
 $ sudo eject /dev/sdg
 ```
 
+### disk blocked by security policy?
+disable secure boot /shrug
 
 
-## boot from usb
+# installation
 https://wiki.archlinux.org/title/installation_guide
 
-get on the wifi
+## get on the wifi
 ```
 iwctl --passphrase wifipassword station wlan0 connect ownish
 ```
