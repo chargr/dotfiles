@@ -64,5 +64,41 @@ https://wiki.archlinux.org/title/installation_guide
 iwctl --passphrase wifipassword station wlan0 connect ownish
 ```
 
-### disk blocked by security policy?
-disable secure boot > F2 > Settings
+## setup disk
+
+### repartition
+```
+parted /dev/nvme0n1
+# delete all the things (DESTROY ALL THE THINGS)
+rm 4
+rm 3
+rm 2
+rm 1
+# create new stuff
+mkpart primary 2048s 512MB fat32
+align-check opt 1
+# because these were the flags before we deleted it
+set 1 msftdata off
+set 1 boot on
+set 1 esp on
+# this was sloppy
+mkpart primary 512MB -1
+check-align opt 2
+```
+
+### create some volume groups
+
+```
+pvcreate /dev/nvme0n1
+vgcreate vol0 /dev/nvme0n1
+lvcreate -n swap -L8G vol0
+lvcreate -n root -L64G vol0
+lvcreate -n home -L128G vol0
+```
+
+### format new partitions
+```
+mkfs.ext4 /dev/vol0/root
+# no root resevation for /home
+mkfs.ext4 -m 0 /dev/vol0/home
+```
