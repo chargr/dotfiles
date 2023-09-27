@@ -1,7 +1,7 @@
 # installation
 
 
-### make usb boot (from another linux host)
+## make usb boot (from another linux host)
 
 download latest [archlinux iso](https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-x86_64.iso)
 
@@ -47,3 +47,16 @@ $ sudo dd if=archlinux-x86_64.iso of=/dev/sdg bs=4M
 # dont forget to eject (reclaims "g" for re-use)
 $ sudo eject /dev/sdg
 ```
+
+
+
+## boot from usb
+https://wiki.archlinux.org/title/installation_guide
+
+get on the wifi
+```
+iwctl --passphrase wifipassword station wlan0 connect ownish
+```
+
+### disk blocked by security policy?
+disable secure boot > F2 > Settings
