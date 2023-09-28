@@ -212,4 +212,5 @@ git
 openssh
 tmux
 rofi
+xorg-xrdb
 ```
