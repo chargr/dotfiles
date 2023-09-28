@@ -38,6 +38,7 @@
           - python-gobject
           - firefox
           - sof-firmware
+          - xsel
 
     - name: service-slim
       become: true
