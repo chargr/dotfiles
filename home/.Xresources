@@ -1,0 +1,44 @@
+Xft.dpi: 100
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: none
+Xft.lcdfilter: lcddefault
+
+URxvt.pointerShape: arrow
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
+
+URxvt.font: xft:Azeret Mono:style=regular:size=8
+URxvt.boldFont: xft:Azeret Mono:style=regular:size=8
+URxvt.letterSpace: -1
+
+URxvt.intensityStyles: false
+
+URxvt.depth: 32
+URxvt.background: [95]#2d2d2d
+URxvt.foreground: #dfdfdf
+
+URxvt.color0:#2d2d2d
+URxvt.color8:#606060
+
+URxvt.color1:#cc6666
+URxvt.color9:#cc6666
+
+URxvt.color2:#b5bd68
+URxvt.color10:#b5bd68
+
+URxvt.color3:#f0c674
+URxvt.color11:#f0c674
+
+URxvt.color4:#81a2be
+URxvt.color12:#81a2be
+
+URxvt.color5:#b294bb
+URxvt.color13:#b294bb
+
+URxvt.color6:#8abeb7
+URxvt.color14:#8abeb7
+
+URxvt.color7:#dfdfdf
+URxvt.color15:#ffffff
