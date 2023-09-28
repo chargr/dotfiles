@@ -12,6 +12,8 @@
           - openssh
           - tmux
           - task
+          - man-db
+          - less
         state: present
 
     - name: "locale.conf"
