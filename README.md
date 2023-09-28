@@ -213,4 +213,6 @@ openssh
 tmux
 rofi
 xorg-xrdb
+power-profiles-daemon
+python-gobject
 ```
