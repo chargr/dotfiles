@@ -1,0 +1,25 @@
+---
+  - name: "linux-laptop"
+    hosts: localhost
+    connection: local
+    tasks:
+
+    - name: util-packages
+      community.general.pacman:
+        name:
+          - git
+          - tmux
+          - task
+        state: present
+
+    - name: desktop-packages
+      community.general.pacman:
+        name:
+          - slim
+          - i3
+          - rofi
+          - rxvt-unicode
+          - xorg-xrdb
+          - power-profiles-daemon
+          - python-gobject
+
