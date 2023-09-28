@@ -5,6 +5,7 @@
     tasks:
 
     - name: util-packages
+      become: true
       ansible.builtin.package:
         name:
           - git
@@ -14,6 +15,7 @@
         state: present
 
     - name: desktop-packages
+      become: true
       ansible.builtin.package:
         state: present
         name:
@@ -25,3 +27,22 @@
           - xorg-xrdb
           - power-profiles-daemon
           - python-gobject
+
+    - name: service-slim
+      become: true
+      service:
+        state: started
+        enabled: true
+        name: slim
+
+    - name: service-power-profiles-daemon
+      become: true
+      service:
+        state: started
+        enabled: true
+        name: power-profiles-daemon
+
+    - name: "i3-config"
+      ansible.builtin.copy:
+        src: home/.config/i3/config
+        dest: ~/.config/i3/config
