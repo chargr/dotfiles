@@ -37,6 +37,7 @@
           - power-profiles-daemon
           - python-gobject
           - firefox
+          - sof-firmware
 
     - name: service-slim
       become: true
