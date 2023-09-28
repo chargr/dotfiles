@@ -210,4 +210,6 @@ less
 man-db
 git
 openssh
+tmux
+rofi
 ```
