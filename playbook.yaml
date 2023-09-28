@@ -8,6 +8,7 @@
       community.general.pacman:
         name:
           - git
+          - openssh
           - tmux
           - task
         state: present
