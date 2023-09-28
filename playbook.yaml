@@ -5,7 +5,7 @@
     tasks:
 
     - name: util-packages
-      community.general.pacman:
+      ansible.builtin.package:
         name:
           - git
           - openssh
@@ -14,7 +14,8 @@
         state: present
 
     - name: desktop-packages
-      community.general.pacman:
+      ansible.builtin.package:
+        state: present
         name:
           - slim
           - i3
@@ -24,4 +25,3 @@
           - xorg-xrdb
           - power-profiles-daemon
           - python-gobject
-
