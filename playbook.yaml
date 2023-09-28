@@ -56,6 +56,12 @@
         enabled: true
         name: power-profiles-daemon
 
+    - name: "xinit"
+      copy:
+        dest: ~/.xinitrc
+        content: |
+          xrdb ~/.Xresources
+          i3
     - name: "i3-config"
       ansible.builtin.copy:
         src: home/.config/i3/config
