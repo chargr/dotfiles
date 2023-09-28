@@ -20,6 +20,7 @@
           - i3
           - rofi
           - rxvt-unicode
+          - xorg-server
           - xorg-xrdb
           - power-profiles-daemon
           - python-gobject
