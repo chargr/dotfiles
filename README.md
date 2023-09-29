@@ -184,35 +184,3 @@ useradd -m chris
 passwd chris
 usermod -a -G wheel chris
 ```
-
-
-## lets get some basic UI
-```
-pacman -S slim i3 rxvt-unicode xorg-server
-systemctl enable slim
-systemctl start slim
-```
-
-# notes
-other minor things we did along the way that
-
-## fixes
-got perl warnings for locale settings
-### locale
-```
-LC_ALL
-LANGUAGE
-```
-
-## additional packages
-```
-less
-man-db
-git
-openssh
-tmux
-rofi
-xorg-xrdb
-power-profiles-daemon
-python-gobject
-```
