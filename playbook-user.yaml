@@ -1,17 +1,17 @@
 ---
-  - name: "linux-laptop"
+  - name: "user profile"
     hosts: localhost
     connection: local
     tasks:
 
-    - name: "xinit"
+    - name: "xinitrc"
       copy:
         dest: ~/.xinitrc
         content: |
           xrdb ~/.Xresources
           i3
 
-    - name: "i3-config"
+    - name: "i3 config"
       ansible.builtin.copy:
         src: home/.config/i3/config
         dest: ~/.config/i3/config
