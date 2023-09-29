@@ -41,6 +41,8 @@
           - firefox
           - sof-firmware
           - xsel
+          - ncspot
+          - pulseaudio
 
     - name: service-slim
       become: true
