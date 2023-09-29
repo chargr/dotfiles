@@ -9,8 +9,8 @@ URxvt.pointerShape: arrow
 URxvt.scrollstyle: plain
 URxvt.scrollBar_right: true
 
-URxvt.font: xft:Azeret Mono:style=medium:size=9
-URxvt.boldFont: xft:Azeret Mono:style=medium:size=9
+URxvt.font: xft:Azeret Mono:style=medium:size=10
+URxvt.boldFont: xft:Azeret Mono:style=medium:size=10
 URxvt.letterSpace: -1
 
 URxvt.intensityStyles: false
