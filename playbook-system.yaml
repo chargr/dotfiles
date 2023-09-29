@@ -43,7 +43,7 @@
           - xsel
           - ncspot
           - pulseaudio
-          - alsamixer
+          - alsa-utils
 
     - name: service-slim
       become: true
