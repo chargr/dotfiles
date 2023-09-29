@@ -4,18 +4,6 @@
     connection: local
     tasks:
 
-    - name: util-packages
-      become: true
-      ansible.builtin.package:
-        name:
-          - git
-          - openssh
-          - tmux
-          - task
-          - man-db
-          - less
-        state: present
-
     - name: "locale.conf"
       become: true
       copy:
@@ -25,11 +13,17 @@
           LANGUAGE=en_US.UTF-8
           LC_ALL=en_US.UTF-8
 
-    - name: desktop-packages
+    - name: "install packages"
       become: true
       ansible.builtin.package:
         state: present
         name:
+          - git
+          - openssh
+          - tmux
+          - task
+          - man-db
+          - less
           - slim
           - i3
           - rofi
