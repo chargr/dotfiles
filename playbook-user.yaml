@@ -20,3 +20,8 @@
       copy:
         src: home/.Xresources
         dest: ~/.Xresources
+
+    - name: "vimrc"
+      copy:
+        src: home/.vimrc
+        dest: ~/.vimrc
