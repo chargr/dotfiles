@@ -38,6 +38,7 @@
           - ncspot
           - pulseaudio
           - alsa-utils
+          - rsync
 
     - name: service-slim
       become: true
