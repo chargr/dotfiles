@@ -6,6 +6,11 @@ font pango:onest semi-bold 12
 
 # smaller for padding on titlebar
 for_window [class=".*"] title_format " <span size='90%'>%title</span>"
+
+# gaps
+gaps inner 24
+gaps outer 8
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
