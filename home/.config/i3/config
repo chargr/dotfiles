@@ -11,6 +11,9 @@ for_window [class=".*"] title_format " <span size='90%'>%title</span>"
 gaps inner 24
 gaps outer 8
 
+# set our background color
+exec --no-startup-id hsetroot -solid "#272727"
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
