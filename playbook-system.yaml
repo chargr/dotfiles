@@ -41,6 +41,14 @@
           - rsync
           - hsetroot
           - polybar
+          - cronie
+
+    - name: service-cronie
+      become: true
+      service:
+        state: started
+        enabled: true
+        name: cronie
 
     - name: service-slim
       become: true
