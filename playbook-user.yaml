@@ -25,3 +25,8 @@
       copy:
         src: home/.vimrc
         dest: ~/.vimrc
+
+    - name: "polybar"
+      copy:
+        src: home/.config/polybar/config.ini
+        dest: ~/.config/polybar/config.ini
