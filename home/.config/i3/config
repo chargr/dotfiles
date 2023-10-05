@@ -22,6 +22,10 @@ client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
+# mouse/cursor settings
+mouse_warping none
+focus_follows_mouse no
+
 ### everything else below is generated/default config to be re-evaluated
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
