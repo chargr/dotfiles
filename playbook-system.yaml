@@ -63,3 +63,10 @@
         state: started
         enabled: true
         name: power-profiles-daemon
+
+    - name: "time sync"
+      become: true
+      service:
+        state: started
+        enabled: true
+        name: systemd-timesyncd
