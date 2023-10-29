@@ -46,6 +46,7 @@
           - picom
           - gcc
           - make
+          - nitrogen
 
     - name: service-cronie
       become: true
