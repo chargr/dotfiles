@@ -11,6 +11,9 @@ for_window [class=".*"] title_format "<span size='90%'> %title</span>"
 gaps inner 24
 gaps outer 8
 
+# compositing
+exec --no-startup-id picom -b
+
 # set our background color
 exec --no-startup-id hsetroot -solid "#272727"
 

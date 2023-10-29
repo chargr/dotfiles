@@ -43,6 +43,7 @@
           - polybar
           - cronie
           - cmake
+          - picom
 
     - name: service-cronie
       become: true
