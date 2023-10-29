@@ -44,6 +44,8 @@
           - cronie
           - cmake
           - picom
+          - gcc
+          - make
 
     - name: service-cronie
       become: true
