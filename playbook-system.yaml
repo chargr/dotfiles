@@ -42,6 +42,7 @@
           - hsetroot
           - polybar
           - cronie
+          - cmake
 
     - name: service-cronie
       become: true

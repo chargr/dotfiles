@@ -26,6 +26,22 @@
         src: home/.vimrc
         dest: ~/.vimrc
 
+    - name: "ycm"
+      file:
+        state: directory
+        path: ~/.vim/bundle/YouCompleteMe
+      register: ycm
+
+    - name: "ycm install"
+      command: "{{ item.cmd }}"
+      args:
+        chdir: "{{ item.chdir }}"
+      with_items:
+      - { chdir: ~/.vim/bundle, cmd: git clone https://github.com/ycm-core/YouCompleteMe.git }
+      - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: git submodule update --init --recursive }
+      - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: python3 install.py }
+      when: ycm is changed
+
     - name: "polybar"
       copy:
         src: home/.config/polybar/config.ini

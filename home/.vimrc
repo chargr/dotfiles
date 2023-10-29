@@ -8,4 +8,4 @@ set nowrap
 
 set noincsearch
 
-" set runtimepath+=~/.vim/bundle/YouCompleteMe/
+set runtimepath+=~/.vim/bundle/YouCompleteMe/
