@@ -30,3 +30,9 @@
       copy:
         src: home/.config/polybar/config.ini
         dest: ~/.config/polybar/config.ini
+
+    - name: "tmux"
+      copy:
+        src: home/.tmux.conf
+        dest: ~/.tmux.conf
+
