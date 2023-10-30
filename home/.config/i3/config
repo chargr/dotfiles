@@ -12,13 +12,14 @@ gaps inner 24
 gaps outer 8
 
 
-# wallpaper
-exec --no-startup-id nitrogen --restore
-# compositing
-exec --no-startup-id picom -b
+# dex autostart
+exec --no-startup-id dex --autostart --environment i3
 
 # set our background color
 exec --no-startup-id hsetroot -solid "#272727"
+
+# wallpaper
+exec --no-startup-id nitrogen --restore
 
 # polybar
 exec_always --no-startup-id polybar -q main
