@@ -49,6 +49,7 @@
           - nitrogen
           - maim
           - xclip
+          - dex
 
     - name: service-cronie
       become: true
