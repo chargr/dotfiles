@@ -47,6 +47,8 @@
           - gcc
           - make
           - nitrogen
+          - maim
+          - xclip
 
     - name: service-cronie
       become: true
