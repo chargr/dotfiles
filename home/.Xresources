@@ -16,7 +16,7 @@ URxvt.letterSpace: -1
 URxvt.intensityStyles: false
 
 URxvt.depth: 32
-URxvt.background: [95]#2d2d2d
+URxvt.background: [90]#2d2d2d
 URxvt.foreground: #dfdfdf
 
 URxvt.color0:#2d2d2d
