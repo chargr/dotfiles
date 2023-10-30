@@ -25,9 +25,10 @@ focus_follows_mouse no
 
 
 ### startup
+
 # autostart
 exec --no-startup-id dex --autostart --environment i3
-#  background color
+# background color
 exec --no-startup-id hsetroot -solid "#272727"
 # wallpaper
 exec --no-startup-id nitrogen --restore
@@ -35,13 +36,13 @@ exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id polybar -q main
 
 
-## app/utility keybindings
+### app/utility keybindings
 
 # copy fullscreen to clipbloard
 bindsym Print exec --no-startup-id maim --format png | xclip -selection clipboard -t image/png -i
-
 # copy screen selection to clipboard
 bindsym $mod+s exec --no-startup-id maim --format png -s --nodrag | xclip -selection clipboard -t image/png -i
+
 
 ### everything else below is generated/default config to be re-evaluated
 
