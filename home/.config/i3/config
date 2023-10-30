@@ -2,10 +2,10 @@
 
 set $mod Mod4
 
-font pango:onest regular 11
+font pango:onest regular 10
 
 # smaller for padding on titlebar
-for_window [class=".*"] title_format "<span size='90%'> %title</span>"
+for_window [class=".*"] title_format "<span> %title</span>"
 
 # gaps
 gaps inner 24
