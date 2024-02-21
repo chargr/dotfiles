@@ -44,6 +44,12 @@ bindsym Print exec --no-startup-id maim --format png | xclip -selection clipboar
 bindsym $mod+s exec --no-startup-id maim --format png -s --nodrag | xclip -selection clipboard -t image/png -i
 
 
+### application window settings
+
+# steam
+for_window [instance="^steamwebhelper$" class="^steam$"] floating enable
+
+
 ### everything else below is generated/default config to be re-evaluated
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
