@@ -43,11 +43,18 @@ bindsym Print exec --no-startup-id maim --format png | xclip -selection clipboar
 # copy screen selection to clipboard
 bindsym $mod+s exec --no-startup-id maim --format png -s --nodrag | xclip -selection clipboard -t image/png -i
 
+# scratchpad keybindings
+bindsym $mod+shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
 
 ### application window settings
 
 # steam
 for_window [instance="^steamwebhelper$" class="^steam$"] floating enable
+
+# cisco anyconnect
+for_window [instance="^com.cisco.anyconnect.gui$" class="^Com.cisco.anyconnect.gui$"] floating enable
+for_window [instance="^com.cisco.anyconnect.gui$" class="^Com.cisco.anyconnect.gui$"] move scratchpad
 
 
 ### everything else below is generated/default config to be re-evaluated
