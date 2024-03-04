@@ -52,10 +52,6 @@ bindsym $mod+minus scratchpad show
 # steam
 for_window [instance="^steamwebhelper$" class="^steam$"] floating enable
 
-# cisco anyconnect
-for_window [instance="^com.cisco.anyconnect.gui$" class="^Com.cisco.anyconnect.gui$"] floating enable
-for_window [instance="^com.cisco.anyconnect.gui$" class="^Com.cisco.anyconnect.gui$"] move scratchpad
-
 
 ### everything else below is generated/default config to be re-evaluated
 
