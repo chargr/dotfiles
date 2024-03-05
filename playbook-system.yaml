@@ -50,7 +50,7 @@
           - maim
           - xclip
           - dex
-          - xautostart
+          - xautolock
 
     - name: service-cronie
       become: true
