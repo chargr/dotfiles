@@ -184,3 +184,12 @@ useradd -m chris
 passwd chris
 usermod -a -G wheel chris
 ```
+
+### disable power button (laptop?)
+i kept bumping the power button my laptop
+
+/etc/systemd/logind.conf
+```
+HandlePowerKey=ignore
+HandlePowerKeyLongPress=poweroff
+```
