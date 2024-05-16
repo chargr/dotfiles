@@ -1,0 +1,15 @@
+live_config_reload = true
+
+import = [
+    "~/.config/alacritty/alacritty-theme/themes/gruvbox_dark.toml"
+]
+
+[window]
+opacity = 0.95
+
+[font]
+normal = { family = "Azeret Mono", style="SemiBold" }
+bold = { style="SemiBold" }
+italic = { style="SemiBold" }
+bold_italic = { style="SemiBold" }
+size = 9
