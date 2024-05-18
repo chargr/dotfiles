@@ -34,7 +34,6 @@
           - python-gobject
           - firefox
           - sof-firmware
-          - xsel
           - ncspot
           - pulseaudio
           - alsa-utils
