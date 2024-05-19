@@ -1,3 +1,8 @@
+- name: ".bashrc"
+  copy:
+    src: home/.bashrc
+    dest: ~/.bashrc
+
 - name: "tmux"
   copy:
     src: home/.tmux.conf
