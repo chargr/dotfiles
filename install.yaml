@@ -4,15 +4,6 @@
     connection: local
     tasks:
 
-    - name: "locale.conf"
-      become: true
-      copy:
-        dest: /etc/locale.conf
-        content: |
-          LANG=en_US.UTF-8
-          LANGUAGE=en_US.UTF-8
-          LC_ALL=en_US.UTF-8
-
     - name: "install packages"
       become: true
       ansible.builtin.package:
