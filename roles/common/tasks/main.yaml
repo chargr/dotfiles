@@ -28,3 +28,15 @@
   - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: git submodule update --init --recursive }
   - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: python3 install.py }
   when: ycm is changed
+
+- name: "ssh config.d"
+  file:
+    state: directory
+    path: ~/.ssh/config.d
+    mode: "700"
+
+- name: "ssh config"
+  copy:
+    src: home/.ssh/config
+    dest: ~/.ssh/config
+    mode: "600"
