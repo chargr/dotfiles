@@ -50,6 +50,7 @@
           - xclip
           - dex
           - xautolock
+          - autorandr
 
     - name: service-cronie
       become: true
