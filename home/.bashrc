@@ -10,7 +10,7 @@ PS1='\[\e[0;33m\][\[\e[1;34m\]$?\[\e[0;33m\]]\n\[\e[1;34m\][\[\e[1;37m\]\u\[\e[1
 export EDITOR=vim
 
 # aliases
-alias ls='ls --color=auto'
+alias ls='LC_COLLATE=C.UTF-8 ls --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 alias vi='vim'
 
