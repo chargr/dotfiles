@@ -1,4 +1,0 @@
-- name: "tmux"
-  copy:
-    src: home/.tmux.conf
-    dest: ~/.tmux.conf
