@@ -8,8 +8,8 @@ import = [
 opacity = 0.95
 
 [font]
-normal = { family = "Azeret Mono", style="SemiBold" }
-bold = { style="SemiBold" }
-italic = { style="SemiBold" }
-bold_italic = { style="SemiBold" }
+normal = { family = "Azeret Mono", style="Regular" }
+bold = { style="Regular" }
+italic = { style="Regular" }
+bold_italic = { style="Regular" }
 size = 9
