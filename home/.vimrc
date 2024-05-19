@@ -11,3 +11,5 @@ set noincsearch
 
 set runtimepath+=~/.vim/bundle/YouCompleteMe/
 let g:ycm_autoclose_preview_window_after_completion=1
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2
