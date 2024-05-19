@@ -5,6 +5,7 @@ Xft.hintstyle: hintslight
 Xft.rgba: none
 Xft.lcdfilter: lcddefault
 
+URxvt.iso14755: False
 URxvt.pointerShape: arrow
 URxvt.scrollstyle: plain
 URxvt.scrollBar_right: true
