@@ -1,0 +1,46 @@
+- name: "xinitrc"
+  copy:
+    src: home/.xinitrc
+    dest: ~/.xinitrc
+
+- name: "i3 config"
+  copy:
+    src: home/.config/i3/config
+    dest: ~/.config/i3/config
+
+- name: "Xresources"
+  copy:
+    src: home/.Xresources
+    dest: ~/.Xresources
+
+- name: "polybar"
+  copy:
+    src: home/.config/polybar/config.ini
+    dest: ~/.config/polybar/config.ini
+
+- name: "polybar config.d"
+  file:
+    state: directory
+    path: ~/.config/polybar/config.d
+
+- name: "alacritty config dir"
+  file:
+    state: directory
+    path: ~/.config/alacritty
+
+- name: "alacritty.toml"
+  copy:
+    src: home/.config/alacritty/alacritty.toml
+    dest: ~/.config/alacritty/alacritty.toml
+
+- name: "alacritty themes dir"
+  stat:
+    path: ~/.config/alacritty/alacritty-theme
+  register: alacritty_theme
+
+- name: "clone alacritty-theme"
+  command: git clone https://github.com/alacritty/alacritty-theme
+  args:
+    chdir: ~/.config/alacritty/
+  when: not alacritty_theme.stat.exists
+
