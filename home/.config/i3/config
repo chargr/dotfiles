@@ -46,6 +46,8 @@ bindsym Print exec --no-startup-id maim --format png | xclip -selection clipboar
 bindsym $mod+s exec --no-startup-id maim --format png -s --nodrag | xclip -selection clipboard -t image/png -i
 # lock screen
 bindsym $mod+shift+x exec --no-startup-id xautolock -locknow
+# autorandr
+bindsym $mod+shift+d exec --no-startup-id autorandr --change --default default
 
 # scratchpad keybindings
 bindsym $mod+shift+minus move scratchpad
