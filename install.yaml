@@ -51,6 +51,7 @@
           - dex
           - xautolock
           - autorandr
+          - pavucontrol
 
     - name: service-cronie
       become: true
