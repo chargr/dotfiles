@@ -25,7 +25,6 @@
           - python-gobject
           - firefox
           - sof-firmware
-          - ncspot
           - pulseaudio
           - alsa-utils
           - rsync
