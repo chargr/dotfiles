@@ -12,4 +12,4 @@ normal = { family = "Azeret Mono", style="Regular" }
 bold = { style="Regular" }
 italic = { style="Regular" }
 bold_italic = { style="Regular" }
-size = 9
+size = 11
