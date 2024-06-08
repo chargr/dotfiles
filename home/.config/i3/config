@@ -48,6 +48,8 @@ bindsym $mod+s exec --no-startup-id maim --format png -s --nodrag | xclip -selec
 bindsym $mod+shift+x exec --no-startup-id xautolock -locknow
 # autorandr
 bindsym $mod+shift+d exec --no-startup-id autorandr --change --default default
+# terminal
+bindsym $mod+grave exec alacritty
 
 # scratchpad keybindings
 bindsym $mod+shift+minus move scratchpad
@@ -93,10 +95,6 @@ floating_modifier $mod
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
-
-# start a terminal
-bindsym $mod+grave exec alacritty
-bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
