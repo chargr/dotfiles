@@ -49,7 +49,7 @@ bindsym $mod+shift+x exec --no-startup-id xautolock -locknow
 # autorandr
 bindsym $mod+shift+d exec --no-startup-id autorandr --change --default default
 # terminal
-bindsym $mod+grave exec alacritty
+bindsym $mod+grave exec --no-startup-id alacritty
 
 # scratchpad keybindings
 bindsym $mod+shift+minus move scratchpad
