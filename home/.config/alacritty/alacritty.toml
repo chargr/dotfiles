@@ -13,5 +13,5 @@ bold = { style="Regular" }
 italic = { style="Regular" }
 bold_italic = { style="Regular" }
 size = 11
-offset.x = -2
+offset.x =  0
 offset.y = -2
