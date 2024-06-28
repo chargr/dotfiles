@@ -42,6 +42,7 @@
           - xautolock
           - autorandr
           - pavucontrol
+          - brightnessctl
 
     - name: service-cronie
       become: true

@@ -55,6 +55,10 @@ bindsym $mod+grave exec --no-startup-id alacritty
 bindsym $mod+shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
+# brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 10%+
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -q set 10%-
+
 ### application window settings
 
 # steam
