@@ -1,3 +1,4 @@
+export PATH=~/opt/env/bin:$PATH
 xrdb ~/.Xresources
 eval $( ssh-agent -t 600 -s )
 i3
