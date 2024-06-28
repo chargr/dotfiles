@@ -43,6 +43,7 @@
           - autorandr
           - pavucontrol
           - brightnessctl
+          - glow
 
     - name: service-cronie
       become: true
