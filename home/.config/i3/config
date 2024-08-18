@@ -47,7 +47,7 @@ bindsym $mod+s exec --no-startup-id maim --format png -s --nodrag | xclip -selec
 # lock screen
 bindsym $mod+shift+x exec --no-startup-id xautolock -locknow
 # autorandr
-bindsym $mod+shift+d exec --no-startup-id autorandr --change --default default
+bindsym $mod+shift+d exec --no-startup-id autorandr --change --default default && nitrogen --restore
 # terminal
 bindsym $mod+grave exec --no-startup-id alacritty
 
