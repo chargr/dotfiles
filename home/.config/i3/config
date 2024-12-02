@@ -63,6 +63,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -q set 10%-
 
 # steam
 for_window [instance="^steamwebhelper$" class="^steam$"] floating enable
+for_window [instance="^pavucontrol$" class="^pavucontrol$"] floating enable
 
 
 ### everything else below is generated/default config to be re-evaluated
