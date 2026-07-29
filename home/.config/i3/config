@@ -36,7 +36,8 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id polybar -r -q main
 # xautolock
 exec --no-startup-id xautolock -detectsleep -time 10 -locker "i3lock -c \#000000"
-
+# set xdg variables
+exec --no-startup-id dbus-update-activation-environment --systemd DISPLAY
 
 ### app/utility keybindings
 
