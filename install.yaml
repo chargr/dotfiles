@@ -29,7 +29,6 @@
           - alsa-utils
           - rsync
           - hsetroot
-          - polybar
           - cronie
           - cmake
           - picom

@@ -13,16 +13,6 @@
     src: home/.Xresources
     dest: ~/.Xresources
 
-- name: "polybar"
-  copy:
-    src: home/.config/polybar/config.ini
-    dest: ~/.config/polybar/config.ini
-
-- name: "polybar config.d"
-  file:
-    state: directory
-    path: ~/.config/polybar/config.d
-
 - name: "alacritty config dir"
   file:
     state: directory
