@@ -15,6 +15,6 @@ alias grep='grep --color=auto'
 alias vi='vim'
 
 # PATH
-export PATH="/home/chris/.local/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 
 # end
