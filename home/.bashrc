@@ -14,4 +14,7 @@ alias ls='LC_COLLATE=C.UTF-8 ls --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 alias vi='vim'
 
+# PATH
+export PATH="/home/chris/.local/bin:$PATH"
+
 # end
