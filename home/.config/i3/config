@@ -62,7 +62,12 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -q set 10%-
 
 # steam
 for_window [instance="^steamwebhelper$" class="^steam$"] floating enable
+# pulse audio
 for_window [instance="^pavucontrol$" class="^pavucontrol$"] floating enable
+# gnome authenticator
+for_window [instance="^authenticator$" class="^authenticator$"] floating enable
+# blueman
+for_window [instance="^blueman-manager$" class="^Blueman-manager$"] floating enable
 
 
 ### everything else below is generated/default config to be re-evaluated
