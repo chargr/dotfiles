@@ -17,4 +17,8 @@ alias vi='vim'
 # PATH
 export PATH=~/.local/bin:$PATH
 
+function fixagent {
+    export $( eval tmux show-environment SSH_AUTH_SOCK )
+}
+
 # end
