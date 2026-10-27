@@ -12,6 +12,5 @@ ansible-playbook desktop.yaml
 
 ## install required packages for archlinux
 ```
-sudo echo
-ansible-playbook install.yaml
+ansible-playbook -K install.yaml
 ```
