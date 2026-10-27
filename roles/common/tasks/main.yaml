@@ -31,7 +31,7 @@
   with_items:
   - { chdir: ~/.vim/bundle, cmd: git clone https://github.com/ycm-core/YouCompleteMe.git }
   - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: git submodule update --init --recursive }
-  - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: python3 install.py }
+  - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: /usr/bin/python3 install.py }
   when: ycm is changed
 
 - name: "ssh config.d"
