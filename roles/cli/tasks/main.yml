@@ -22,22 +22,12 @@
     dest: ~/.vimrc
     mode: "0644"
 
-- name: "Check YouCompleteMe Installation"
-  ansible.builtin.file:
-    state: directory
-    path: ~/.vim/bundle/YouCompleteMe
-    mode: "0755"
-  register: cli_ycm
-
-- name: "Install YouCompleteMe"
-  ansible.builtin.command: "{{ item.cmd }}"
-  args:
-    chdir: "{{ item.chdir }}"
-  with_items:
-    - { chdir: ~/.vim/bundle, cmd: git clone https://github.com/ycm-core/YouCompleteMe.git }
-    - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: git submodule update --init --recursive }
-    - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: /usr/bin/python3 install.py }
-  when: cli_ycm is changed
+- name: "Checkout YouCompleteMe" # noqa : latest
+  ansible.builtin.git:
+    dest: ~/.vim/bundle/YouCompleteMe
+    repo: https://github.com/ycm-core/YouCompleteMe.git
+    depth: 1
+  notify: "Install YCM"
 
 - name: "Create SSH config.d"
   ansible.builtin.file:

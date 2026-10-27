@@ -1,0 +1,5 @@
+- name: "Install YCM"
+  ansible.builtin.command:
+    cmd: /usr/bin/python3 install.py
+    chdir: ~/.vim/bundle/YouCompleteMe
+  changed_when: true
