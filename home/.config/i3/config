@@ -68,6 +68,8 @@ for_window [instance="^pavucontrol$" class="^pavucontrol$"] floating enable
 for_window [instance="^authenticator$" class="^authenticator$"] floating enable
 # blueman
 for_window [instance="^blueman-manager$" class="^Blueman-manager$"] floating enable
+# ssh-askpass
+for_window [instance="^ssh-askpass$"] floating enable
 
 
 ### everything else below is generated/default config to be re-evaluated
