@@ -28,14 +28,8 @@
     dest: ~/.config/alacritty/alacritty.toml
     mode: "0644"
 
-- name: "alacritty themes dir"
-  stat:
-    path: ~/.config/alacritty/alacritty-theme
-  register: alacritty_theme
-
-- name: "clone alacritty-theme"
-  command: git clone https://github.com/alacritty/alacritty-theme
-  args:
-    chdir: ~/.config/alacritty/
-  when: not alacritty_theme.stat.exists
-
+- name: "Clone alacritty themes" # noqa : latest
+  ansible.builtin.git:
+    dest: ~/.config/alacritty/alacritty-theme
+    repo: https://github.com/alacritty/alacritty-theme.git
+    depth: 1
