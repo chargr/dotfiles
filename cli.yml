@@ -2,4 +2,4 @@
 - name: "CLI Tools Playbook"
   hosts: localhost
   roles:
-    - common
+    - cli

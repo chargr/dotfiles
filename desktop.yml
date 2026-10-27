@@ -2,5 +2,5 @@
 - name: Desktop Environment Playbook
   hosts: localhost
   roles:
-    - common
+    - cli
     - desktop
