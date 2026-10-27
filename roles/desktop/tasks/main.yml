@@ -1,27 +1,32 @@
-- name: "xinitrc"
-  copy:
+- name: "Copy xinitrc"
+  ansible.builtin.copy:
     src: home/.xinitrc
     dest: ~/.xinitrc
+    mode: "0644"
 
-- name: "i3 config"
-  copy:
+- name: "Copy i3 config"
+  ansible.builtin.copy:
     src: home/.config/i3/config
     dest: ~/.config/i3/config
+    mode: "0644"
 
-- name: "Xresources"
-  copy:
+- name: "Copy Xresources"
+  ansible.builtin.copy:
     src: home/.Xresources
     dest: ~/.Xresources
+    mode: "0644"
 
-- name: "alacritty config dir"
-  file:
+- name: "Create alacritty config dir"
+  ansible.builtin.file:
     state: directory
     path: ~/.config/alacritty
+    mode: "0755"
 
-- name: "alacritty.toml"
-  copy:
+- name: "Copy alacritty config"
+  ansible.builtin.copy:
     src: home/.config/alacritty/alacritty.toml
     dest: ~/.config/alacritty/alacritty.toml
+    mode: "0644"
 
 - name: "alacritty themes dir"
   stat:
