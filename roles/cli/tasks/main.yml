@@ -1,47 +1,52 @@
-- name: ".bashrc"
-  copy:
+- name: "Copy .bashrc"
+  ansible.builtin.copy:
     src: home/.bashrc
     dest: ~/.bashrc
+    mode: "0644"
 
-- name: "tmux"
-  copy:
+- name: "Copy tmux config"
+  ansible.builtin.copy:
     src: home/.tmux.conf
     dest: ~/.tmux.conf
+    mode: "0644"
 
-- name: "vim bundle dir"
-  file:
+- name: "Create vim bundle directory"
+  ansible.builtin.file:
     state: directory
     path: ~/.vim/bundle
+    mode: "0755"
 
-- name: "vimrc"
-  copy:
+- name: "Copy .vimrc"
+  ansible.builtin.copy:
     src: home/.vimrc
     dest: ~/.vimrc
+    mode: "0644"
 
-- name: "ycm"
-  file:
+- name: "Check YouCompleteMe Installation"
+  ansible.builtin.file:
     state: directory
     path: ~/.vim/bundle/YouCompleteMe
-  register: ycm
+    mode: "0755"
+  register: cli_ycm
 
-- name: "ycm install"
-  command: "{{ item.cmd }}"
+- name: "Install YouCompleteMe"
+  ansible.builtin.command: "{{ item.cmd }}"
   args:
     chdir: "{{ item.chdir }}"
   with_items:
-  - { chdir: ~/.vim/bundle, cmd: git clone https://github.com/ycm-core/YouCompleteMe.git }
-  - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: git submodule update --init --recursive }
-  - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: /usr/bin/python3 install.py }
-  when: ycm is changed
+    - { chdir: ~/.vim/bundle, cmd: git clone https://github.com/ycm-core/YouCompleteMe.git }
+    - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: git submodule update --init --recursive }
+    - { chdir: ~/.vim/bundle/YouCompleteMe, cmd: /usr/bin/python3 install.py }
+  when: cli_ycm is changed
 
-- name: "ssh config.d"
-  file:
+- name: "Create SSH config.d"
+  ansible.builtin.file:
     state: directory
     path: ~/.ssh/config.d
     mode: "700"
 
-- name: "ssh config"
-  copy:
+- name: "Copy SSH Config"
+  ansible.builtin.copy:
     src: home/.ssh/config
     dest: ~/.ssh/config
     mode: "600"
