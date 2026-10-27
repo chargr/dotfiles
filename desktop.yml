@@ -1,5 +1,6 @@
 ---
-- hosts: localhost
+- name: Desktop Environment Playbook
+  hosts: localhost
   roles:
     - common
     - desktop
