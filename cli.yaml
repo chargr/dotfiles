@@ -1,4 +1,5 @@
 ---
-- hosts: localhost
+- name: "CLI Tools Playbook"
+  hosts: localhost
   roles:
     - common
