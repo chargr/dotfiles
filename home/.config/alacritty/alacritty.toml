@@ -9,10 +9,10 @@ import = [
 opacity = 0.95
 
 [font]
-normal = { family = "Azeret Mono", style="Medium" }
-bold = { style="Medium" }
-italic = { style="Medium" }
-bold_italic = { style="Medium" }
+normal = { family = "Azeret Mono", style="SemiBold" }
+bold = { style="SemiBold" }
+italic = { style="SemiBold" }
+bold_italic = { style="SemiBold" }
 size = 10
 offset.x =  0
 offset.y = -2
