@@ -1,0 +1,9 @@
+- name: DotFiles Playbook
+  hosts: localhost
+  roles:
+    - role: install
+      tags: [never, install]
+    - role: cli
+      tags: [desktop]
+    - role: desktop
+      tags: [never, desktop]

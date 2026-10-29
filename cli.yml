@@ -1,5 +1,0 @@
----
-- name: "CLI Tools Playbook"
-  hosts: localhost
-  roles:
-    - cli

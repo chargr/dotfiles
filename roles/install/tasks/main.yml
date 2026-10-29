@@ -1,0 +1,67 @@
+- name: "Install Packages"
+  become: true
+  ansible.builtin.package:
+    state: present
+    name:
+      - git
+      - openssh
+      - tmux
+      - task
+      - man-db
+      - less
+      - slim
+      - i3
+      - rofi
+      - rxvt-unicode
+      - xorg-server
+      - xorg-xrdb
+      - power-profiles-daemon
+      - python-gobject
+      - firefox
+      - sof-firmware
+      - pulseaudio
+      - alsa-utils
+      - rsync
+      - hsetroot
+      - cronie
+      - cmake
+      - picom
+      - gcc
+      - make
+      - nitrogen
+      - maim
+      - xclip
+      - dex
+      - xautolock
+      - autorandr
+      - pavucontrol
+      - brightnessctl
+      - glow
+
+- name: "Enable Cronie"
+  become: true
+  ansible.builtin.service:
+    state: started
+    enabled: true
+    name: cronie
+
+- name: "Enable Slim"
+  become: true
+  ansible.builtin.service:
+    state: started
+    enabled: true
+    name: slim
+
+- name: "Enable Power Profiles"
+  become: true
+  ansible.builtin.service:
+    state: started
+    enabled: true
+    name: power-profiles-daemon
+
+- name: "Enable Timesyncd"
+  become: true
+  ansible.builtin.service:
+    state: started
+    enabled: true
+    name: systemd-timesyncd

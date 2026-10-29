@@ -1,6 +1,0 @@
----
-- name: Desktop Environment Playbook
-  hosts: localhost
-  roles:
-    - cli
-    - desktop

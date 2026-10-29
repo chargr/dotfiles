@@ -2,15 +2,15 @@
 
 ## configure bash/shell environment
 ```
-ansible-playbook cli.yaml
+ansible-playbook site.yml
 ```
 
 ## configure desktop environment
 ```
-ansible-playbook desktop.yaml
+ansible-playbook site.yml -t desktop
 ```
 
 ## install required packages for archlinux
 ```
-ansible-playbook -K install.yaml
+ansible-playbook -K site.yml -t install
 ```
