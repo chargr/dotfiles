@@ -19,7 +19,7 @@
       - python-gobject
       - firefox
       - sof-firmware
-      - pulseaudio
+      - pipewire-pulse
       - alsa-utils
       - rsync
       - hsetroot
