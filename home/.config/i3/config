@@ -70,6 +70,10 @@ for_window [instance="^authenticator$" class="^authenticator$"] floating enable
 for_window [instance="^blueman-manager$" class="^Blueman-manager$"] floating enable
 # ssh-askpass
 for_window [instance="^ssh-askpass$"] floating enable
+# Thunar
+for_window [instance="^Thunar$" class="^Thunar$"] floating enable
+# mpv
+for_window [instance="^mpvk$" class="^mpv$"] floating enable
 
 
 ### everything else below is generated/default config to be re-evaluated
