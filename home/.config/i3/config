@@ -75,7 +75,7 @@ for_window [instance="^ssh-askpass$"] floating enable
 # Thunar
 for_window [instance="^Thunar$" class="^Thunar$"] floating enable
 # mpv
-for_window [instance="^mpvk$" class="^mpv$"] floating enable
+for_window [instance="^mpvk$" class="^mpv$"] floating enable, sticky enable
 
 
 ### everything else below is generated/default config to be re-evaluated
