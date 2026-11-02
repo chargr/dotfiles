@@ -49,6 +49,8 @@ bindsym $mod+shift+x exec --no-startup-id xautolock -locknow
 bindsym $mod+shift+d exec --no-startup-id autorandr --change --default default && nitrogen --restore
 # terminal
 bindsym $mod+grave exec --no-startup-id alacritty
+# file manager
+bindsym $mod+e exec --no-startup-id Thunar
 
 # scratchpad keybindings
 bindsym $mod+shift+minus move scratchpad
