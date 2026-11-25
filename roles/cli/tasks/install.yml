@@ -1,0 +1,14 @@
+- name: "Install Packages"
+  become: true
+  ansible.builtin.package:
+    state: present
+    name:
+      - git
+      - openssh
+      - tmux
+      - task
+      - man-db
+      - less
+      - rsync
+      - xclip
+      - glow

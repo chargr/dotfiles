@@ -1,0 +1,27 @@
+- name: "Install Packages"
+  become: true
+  ansible.builtin.package:
+    state: present
+    name:
+      - slim
+      - i3
+      - rofi
+      - xorg-server
+      - xorg-xrdb
+      - python-gobject
+      - firefox
+      - chromium
+      - sof-firmware
+      - pipewire-pulse
+      - alsa-utils
+      - hsetroot
+      - picom
+      - nitrogen
+      - maim
+      - xclip
+      - dex
+      - xautolock
+      - autorandr
+      - pavucontrol
+      - brightnessctl
+      - glow

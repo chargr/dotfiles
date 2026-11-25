@@ -1,3 +1,7 @@
+- name: "Install Cli Packages"
+  ansible.builtin.include_tasks: install.yml
+  when: "'install' in ansible_run_tags"
+
 - name: "Copy .bashrc"
   ansible.builtin.copy:
     src: home/.bashrc

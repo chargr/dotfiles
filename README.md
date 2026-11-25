@@ -10,7 +10,8 @@ ansible-playbook site.yml
 ansible-playbook site.yml -t desktop
 ```
 
-## install required packages for archlinux
+## add the "install" tag to install packages
 ```
-ansible-playbook -K site.yml -t install
+ansible-playbook -K site.yml -t install             # cli packages
+ansible-playbook -K site.yml -t desktop,install     # desktop packages
 ```

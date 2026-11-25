@@ -1,3 +1,7 @@
+- name: "Install Desktop Packages"
+  ansible.builtin.import_tasks: install.yml
+  when: "'install' in ansible_run_tags"
+
 - name: "Copy xinitrc"
   ansible.builtin.copy:
     src: home/.xinitrc
