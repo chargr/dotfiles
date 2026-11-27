@@ -1,14 +1,27 @@
 - name: "Install Packages"
   become: true
+  vars:
+    cli_packages:
+      Archlinux:
+        - git
+        - vim
+        - tmux
+        - task
+        - xclip
+        - glow
+        - gcc
+        - cmake
+      Debian:
+        - git
+        - vim
+        - tmux
+        - taskwarrior
+        - xclip
+        - glow
+        - gcc
+        - g++
+        - cmake
+        - python3-dev
   ansible.builtin.package:
     state: present
-    name:
-      - git
-      - openssh
-      - tmux
-      - task
-      - man-db
-      - less
-      - rsync
-      - xclip
-      - glow
+    name: "{{ cli_packages[ansible_facts['os_family']] }}"
