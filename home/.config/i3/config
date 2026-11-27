@@ -78,6 +78,10 @@ for_window [instance="^Thunar$" class="^Thunar$"] floating enable
 for_window [instance="^mpvk$" class="^mpv$"] floating enable, sticky enable, border pixel 1
 # 1password
 for_window [instance="^com.onepassword.onepassword$" class="^com.onepassword.OnePassword$"] floating enable
+# keepassxc
+for_window [instance="^keepassxc$" class="^KeePassXC$"] floating enable
+
+include ~/.config/i3/config.d/*.config
 
 
 ### everything else below is generated/default config to be re-evaluated
