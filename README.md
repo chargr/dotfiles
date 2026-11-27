@@ -5,6 +5,12 @@
 ansible-playbook site.yml
 ```
 
+## YouCompleteMe
+```
+ansible-playbook site.yml -t ycm                    # checkout and build
+ansible-playbook site.yml -t ycm,install            # install build dependencies
+```
+
 ## configure desktop environment
 ```
 ansible-playbook site.yml -t desktop

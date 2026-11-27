@@ -1,0 +1,16 @@
+- name: "Install Packages"
+  ansible.builtin.include_tasks: install.yml
+  when: "'install' in ansible_run_tags"
+
+- name: "Create vim bundle directory"
+  ansible.builtin.file:
+    state: directory
+    path: ~/.vim/bundle
+    mode: "0755"
+
+- name: "Checkout YouCompleteMe" # noqa : latest
+  ansible.builtin.git:
+    dest: ~/.vim/bundle/YouCompleteMe
+    repo: https://github.com/ycm-core/YouCompleteMe.git
+    depth: 1
+  notify: "Install YCM"

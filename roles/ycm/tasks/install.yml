@@ -1,0 +1,16 @@
+- name: "Install YCM Build Requirements"
+  become: true
+  vars:
+    cli_packages:
+      Archlinux:
+        - gcc
+        - cmake
+        - python
+      Debian:
+        - gcc
+        - g++
+        - cmake
+        - python3-dev
+  ansible.builtin.package:
+    state: present
+    name: "{{ cli_packages[ansible_facts['os_family']] }}"

@@ -9,8 +9,6 @@
         - task
         - xclip
         - glow
-        - gcc
-        - cmake
       Debian:
         - git
         - vim
@@ -18,10 +16,6 @@
         - taskwarrior
         - xclip
         - glow
-        - gcc
-        - g++
-        - cmake
-        - python3-dev
   ansible.builtin.package:
     state: present
     name: "{{ cli_packages[ansible_facts['os_family']] }}"

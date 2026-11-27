@@ -3,5 +3,7 @@
   roles:
     - role: cli
       tags: [always]
+    - role: ycm
+      tags: [never, ycm]
     - role: desktop
       tags: [never, desktop]
